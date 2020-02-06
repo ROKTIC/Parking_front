@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>parking</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Nearbebe, care, caplus, station, Air, Monitoring, baby, air quality" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<!--icon-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!--css-->
+	<link rel="stylesheet" href="../css/style.css" media="all"/>
+	
+</head>
+
+<body>
+
+<div class="wrap">
+	<center>
+		<!--gnb-->
+		<div class="gnb">
+			<header>
+				<div class="logo">
+					<a href=""><h1><img src="../images/logo.png" alt="go home"></h1></a>
+				</div>
+				
+				<div class="gnb_menu_wrap">
+					<div class="gnb_menu">
+						<h2 class="txt_hide">web Menu, 웹 메뉴</h2>
+						<ul>
+							<li class="gnb_menu_sel"><a href="#">주차장관리</a></li>
+							<li><a href="#">정기회원등록</a></li>
+							<li><a href="#">실적관리</a></li>
+							<li><a href="#">환경설정</a></li>
+						</ul>
+					</div>
+					
+					<div class="gnb_login">
+						<button class="btn_login">
+							<span class="icon_login"></span>
+							<p class="id_login">홍길동</p>
+							<i class="fa fa-angle-down"></i>
+						</button>
+						<!--login popup-->
+						<div class="login_popup_wrap">
+							<p class="t20 bold" id="">홍길동</p>
+							<p><a href="" class="btn_mypage">내 정보 수정 </a></p>
+							<div class="btn_logout"><a href="">로그아웃</a></div>
+						</div>
+						<!--//login popup-->
+					</div>
+					
+				</div>
+				
+			</header>
+		</div>
+		<!--//gnb-->
+		
+		<!--lnb-->
+		<div class="lnb">
+			<aside>
+				<h2 class="txt_hide">Gate list menu, 주차장 정산기 메뉴</h2>
+				<div class="lnb_menu">
+					<ul>
+						<li class="lnb_list">
+							<a class="lnb_mn" href="#">
+								<p class="t14">Gate1</p>
+							</a>
+							<!--펼쳐지고 닫히는 리스트-->
+							<div class="lnb_sub" id="">
+								<ul>
+									<li class="lnb_sub_list">
+										<a href="#">정산기1</a>
+									</li>
+									<li class="lnb_sub_list">
+										<a href="#">정산기2</a>
+									</li>
+								</ul>
+							</div>
+							<!--//펼쳐지고 닫히는 리스트-->
+						</li>
+						
+						<li class="lnb_list" id="lnb_sel">
+							<a class="lnb_mn" href="#">
+								<p class="t14">Gate1</p>
+							</a>
+							<!--펼쳐지고 닫히는 리스트-->
+							<div class="lnb_sub" id="lnb_open">
+								<ul>
+									<li class="lnb_sub_list">
+										<a href="#" id="lnb_sub_sel">정산기1</a>
+									</li>
+									<li class="lnb_sub_list">
+										<a href="#">정산기2</a>
+									</li>
+									<li class="lnb_sub_list">
+										<a href="#">정산기3</a>
+									</li>
+								</ul>
+							</div>
+							<!--//펼쳐지고 닫히는 리스트-->
+						</li>
+						
+						<li class="lnb_list">
+							<a class="lnb_mn" href="#">
+								<p class="t14">Gate1</p>
+							</a>
+							<!--펼쳐지고 닫히는 리스트-->
+							<div class="lnb_sub" id="">
+								<ul>
+									<li class="lnb_sub_list">
+										<a href="#">정산기1</a>
+									</li>
+									<li class="lnb_sub_list">
+										<a href="#">정산기2</a>
+									</li>
+								</ul>
+							</div>
+							<!--//펼쳐지고 닫히는 리스트-->
+						</li>	
+			
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--//lnb-->
+		
+		<!--content-->
+		<div class="content_wrap">
+			<!--dash board-->
+			<div class="dashb">
+				<h2 class="txt_hide">모니터링 </h2>
+				
+				<!--unit1-->
+				<div class="unit" id="ut1">
+					<div class="unit_tit ut_s1">
+						<h3><p class="w12">장비현황</p></h3>
+					</div>
+					
+					<div class="unit_table">
+						<table>
+							<tr class="ut_s1">
+								<th>상태</th>
+								<th>주차장명</th>
+								<th>정산기명</th>
+							</tr>
+							<tr>
+								<td><span class="l_err"></span></td>
+								<td class="txt_l">A주차장</td>
+								<td class="txt_l">출구1</td>
+							</tr>
+							<tr>	
+								<td><span class="l_ok"></span></td>
+								<td class="txt_l">B주차장</td>
+								<td class="txt_l">출구2</td>
+							</tr>
+							<tr>
+								<td><span class="l_ok"></span></td>
+								<td class="txt_l">C주차장</td>
+								<td class="txt_l">출구3</td>
+							</tr>
+							<tr>
+								<td><span class="l_ok"></span></td>
+								<td class="txt_l">D주차장</td>
+								<td class="txt_l">출구4</td>
+							</tr>
+							<tr>
+								<td><span class="l_ok"></span></td>
+								<td class="txt_l">E주차장</td>
+								<td class="txt_l">출구5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--//unit1-->
+				
+				<!--unit2-->
+				<div class="unit" id="ut2">
+					<div class="unit_tit ut_s2">
+						<h3><p class="w12">오인식 List</p></h3>
+					</div>
+					
+					<div class="unit_table">
+						<table>
+							<tr class="ut_s2">
+								<th>No.</th>
+								<th>입차일시</th>
+								<th>차량번호</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>
+									<p id="" alt="date">2020&#45;01&#45;19</p>
+									<p id="" alt="time">13&#58;11&#58;04</p>
+								</td>
+								<td>12가3456</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>
+									<p id="" alt="date">2020&#45;01&#45;19</p>
+									<p id="" alt="time">13&#58;11&#58;04</p>
+								</td>
+								<td>12가3456</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>
+									<p id="" alt="date">2020&#45;01&#45;19</p>
+									<p id="" alt="time">13&#58;11&#58;04</p>
+								</td>
+								<td>12가3456</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>
+									<p id="" alt="date">2020&#45;01&#45;19</p>
+									<p id="" alt="time">13&#58;11&#58;04</p>
+								</td>
+								<td>12가3456</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--//unit2-->
+				
+				<!--unit3-->
+				<div class="unit" id="ut3">
+					<div class="unit_tit ut_s3">
+						<h3><p class="w12">지정위치위반 &#40;거주자용&#41;</p></h3>
+					</div>
+					
+					<div class="unit_table">
+						<table>
+							<tr class="ut_s3">
+								<th>입차일시</th>
+								<th>주차장명</th>
+								<th>현재 주차구역</th>
+								<th>정기권 주차구역</th>
+								<th>차량번호</th>
+								<th>SMS발송</th>
+							</tr>
+						  
+							<tr>
+								<td>
+									<p class="t10" id="" alt="date">2020&#45;01&#45;15</p>
+									<p id="" alt="time">12&#58;11&#58;04</p>
+								</td>
+								<td>A주차장</td>
+								<td>
+									<p id="">출구1</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-1</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>
+									<p id="">출구1</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-2</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>12가3456</td>
+								<td><button class="ut_btn ut_s3">발송</button></td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p class="t10" id="" alt="date">2020&#45;01&#45;15</p>
+									<p id="" alt="time">04&#58;07&#58;13</p>
+								</td>
+								<td>B주차장</td>
+								<td>
+									<p id="">출구2</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-1</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>
+									<p id="">출구2</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-2</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>12가3456</td>
+								<td><button class="ut_btn ut_s3">발송</button></td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p class="t10" id="" alt="date">2020&#45;02&#45;16</p>
+									<p id="" alt="time">07&#58;04&#58;26</p>
+								</td>
+								<td>C주차장</td>
+								<td>
+									<p id="">출구3</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-1</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>
+									<p id="">출구3</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-2</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>12가3456</td>
+								<td><button class="ut_btn ut_s3">발송</button></td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p class="t10" id="" alt="date">2020&#45;02&#45;17</p>
+									<p id="" alt="time">02&#58;18&#58;05</p>
+								</td>
+								<td>D주차장</td>
+								<td>
+									<p id="">출구4</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-1</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>
+									<p id="">출구4</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-2</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>12가3456</td>
+								<td><button class="ut_btn ut_s3">발송</button></td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p class="t10" id="" alt="date">2020&#45;02&#45;19</p>
+									<p id="" alt="time">18&#58;15&#58;27</p>
+								</td>
+								<td>E주차장</td>
+								<td>
+									<p id="">출구5</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-1</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>
+									<p id="">출구5</p>
+									<p id="">
+										<span class="ut_s3_ptxt" id="">A-2</span>
+										12&#58;05&#58;30
+									</p>
+								</td>
+								<td>12가3456</td>
+								<td><button class="ut_btn ut_s3">발송</button></td>
+							</tr>
+							  
+						</table>
+					</div>
+				</div>
+				<!--//unit3-->
+				
+				<!--unit0-->
+				<div class="unit" id="ut0">
+					<div class="unit_tit ut_s0">
+						<h3><p class="w12">입출차현황</p></h3>
+					</div>
+					<!--테이블2개-->
+					<div class="unit_table2">
+						<table class="ut_s0">
+							<tr class="duo">
+								<!--입차table-->
+								<td>
+									<table>
+										<tr>
+											<th>입차일시</th>
+											<th>입구명</th>
+											<th>차량번호</th>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>입차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>입차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>입차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>입차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>입차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>입차1</td>
+											<td>12가3456</td>
+										</tr>
+									</table>
+								</td>
+								<!--//입차테이블-->
+								<!--출차 테이블-->
+								<td>
+									<table>
+										<tr>
+											<th>출차일시</th>
+											<th>출구명</th>
+											<th>차량번호</th>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>출차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>출차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>출차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>출차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>출차1</td>
+											<td>12가3456</td>
+										</tr>
+										<tr>
+											<td>
+												<p id="" alt="date">2020&#45;01&#45;19</p>
+												<p id="" alt="time">13&#58;11&#58;04</p>
+											</td>
+											<td>출차1</td>
+											<td>12가3456</td>
+										</tr>
+									</table>
+								</td>
+								<!--//출차테이블-->
+							</tr>
+						</table>
+					</div>
+					<!--//테이블2개-->
+				</div>
+				<!--//unit0-->
+				
+				<!--unit4-->
+				<div class="unit" id="ut4">
+					<div class="unit_tit ut_s4">
+						<h3><p class="w12">input type group style</p></h3>
+					</div>
+					
+					<div class="unit_input_wrap">
+						<!--구분-->
+						<div class="ut_i_ct">
+							<p class="ut_ipt">
+								<label for="ut_ca">구분1</label>
+								<select name="ut_selectbox" id="ut_ca">
+								  <option value="all" selected="selected">전체</option>
+								  <option value="c1">카테고리1</option>
+								  <option value="c2">카테고리2</option>
+								</select>
+							</p>
+						</div>
+						<!--//구분-->
+						
+						<!--이름-->
+						<div class="ut_i_name">
+							<p class="ut_ipt">
+								<label for="ut_name">이름</label>
+								<input type="text" id="ut_name">
+							</p>
+						</div>
+						<!--//이름-->
+						
+						<!--차량번호-->
+						<div class="ut_i_cn">
+							<p class="ut_ipt">
+								<label for="ut_name">차량번호</label>
+								<input type="text" id="ut_carnum">
+							</p>
+						</div>
+						<!--//차량번호-->
+						
+						<!--조회버튼-->
+						<button class="btn_ut_search">
+							<i class="fa fa-search"></i>
+							조회
+						</button>
+						<!--//조회버튼-->
+					</div>
+					
+					<div class="unit_table">
+						<table>
+						  <tr class="ut_s4">
+							<th>테이블 제목</th>
+							<th>테이블 제목</th>
+							<th>테이블 제목</th>
+						  </tr>
+						  <tr>
+							<td>테이블 리스트1</td>
+							<td>테이블 리스트2</td>
+							<td><button class="ut_btn ut_s4">발송</button></td>
+						  </tr>
+						  <tr>
+							<td>테이블 리스트1</td>
+							<td>테이블 리스트2</td>
+							<td><button class="ut_btn ut_s4">발송</button></td>
+						  </tr>
+						  <tr>
+							<td>테이블 리스트1</td>
+							<td>테이블 리스트2</td>
+							<td><button class="ut_btn ut_s4">발송</button></td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+				<!--//unit4-->
+				
+			</div>
+			<!--//dash board-->
+		<div>
+		<!--//content-->
+	</center>
+</div>
+
+
+</body>
+
+</html>
