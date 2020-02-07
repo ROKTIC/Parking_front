@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>parking</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="Nearbebe, care, caplus, station, Air, Monitoring, baby, air quality" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>(주) 파킹패스</title>
+
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="keywords" content="Nearbebe, care, caplus, station, Air, Monitoring, baby, air quality" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="../js/main.js"></script>
+
 	<!--icon-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/fontawesome.min.css">
 
 	<!--css-->
 	<link rel="stylesheet" href="../css/style.css" media="all"/>
-	
+
+
 </head>
 
 <body>
@@ -27,7 +36,7 @@
 				<div class="logo">
 					<a href=""><h1><img src="../images/logo.png" alt="go home"></h1></a>
 				</div>
-				
+
 				<div class="gnb_menu_wrap">
 					<div class="gnb_menu">
 						<h2 class="txt_hide">web Menu, 웹 메뉴</h2>
@@ -38,7 +47,7 @@
 							<li><a href="#">환경설정</a></li>
 						</ul>
 					</div>
-					
+
 					<div class="gnb_login">
 						<button class="btn_login">
 							<span class="icon_login"></span>
@@ -53,23 +62,23 @@
 						</div>
 						<!--//login popup-->
 					</div>
-					
+
 				</div>
-				
+
 			</header>
 		</div>
 		<!--//gnb-->
-		
+
 		<!--lnb-->
-		<div class="lnb">
+		<div class="lnb"  id="accordian">
 			<aside>
 				<h2 class="txt_hide">Gate list menu, 주차장 정산기 메뉴</h2>
 				<div class="lnb_menu">
 					<ul>
+						<li class="lnb_site" id="parksite"><a style="cursor: default"><p>오스카 주차장</p></a></li>
+
 						<li class="lnb_list">
-							<a class="lnb_mn" href="#">
-								<p class="t14">Gate1</p>
-							</a>
+							<a class="lnb_mn" href="#"><p class="t14">Gate1</p></a>
 							<!--펼쳐지고 닫히는 리스트-->
 							<div class="lnb_sub" id="">
 								<ul>
@@ -83,10 +92,10 @@
 							</div>
 							<!--//펼쳐지고 닫히는 리스트-->
 						</li>
-						
+
 						<li class="lnb_list" id="lnb_sel">
 							<a class="lnb_mn" href="#">
-								<p class="t14">Gate1</p>
+								<p class="t14">Gate2</p>
 							</a>
 							<!--펼쳐지고 닫히는 리스트-->
 							<div class="lnb_sub" id="lnb_open">
@@ -104,10 +113,10 @@
 							</div>
 							<!--//펼쳐지고 닫히는 리스트-->
 						</li>
-						
+
 						<li class="lnb_list">
 							<a class="lnb_mn" href="#">
-								<p class="t14">Gate1</p>
+								<p class="t14">Gate3</p>
 							</a>
 							<!--펼쳐지고 닫히는 리스트-->
 							<div class="lnb_sub" id="">
@@ -121,26 +130,26 @@
 								</ul>
 							</div>
 							<!--//펼쳐지고 닫히는 리스트-->
-						</li>	
-			
+						</li>
+
 					</ul>
 				</div>
 			</aside>
 		</div>
 		<!--//lnb-->
-		
+
 		<!--content-->
 		<div class="content_wrap">
 			<!--dash board-->
 			<div class="dashb">
 				<h2 class="txt_hide">모니터링 </h2>
-				
+
 				<!--unit1-->
 				<div class="unit" id="ut1">
 					<div class="unit_tit ut_s1">
 						<h3><p class="w12">장비현황</p></h3>
 					</div>
-					
+
 					<div class="unit_table">
 						<table>
 							<tr class="ut_s1">
@@ -153,7 +162,7 @@
 								<td class="txt_l">A주차장</td>
 								<td class="txt_l">출구1</td>
 							</tr>
-							<tr>	
+							<tr>
 								<td><span class="l_ok"></span></td>
 								<td class="txt_l">B주차장</td>
 								<td class="txt_l">출구2</td>
@@ -177,13 +186,13 @@
 					</div>
 				</div>
 				<!--//unit1-->
-				
+
 				<!--unit2-->
 				<div class="unit" id="ut2">
 					<div class="unit_tit ut_s2">
 						<h3><p class="w12">오인식 List</p></h3>
 					</div>
-					
+
 					<div class="unit_table">
 						<table>
 							<tr class="ut_s2">
@@ -227,13 +236,13 @@
 					</div>
 				</div>
 				<!--//unit2-->
-				
+
 				<!--unit3-->
 				<div class="unit" id="ut3">
 					<div class="unit_tit ut_s3">
 						<h3><p class="w12">지정위치위반 &#40;거주자용&#41;</p></h3>
 					</div>
-					
+
 					<div class="unit_table">
 						<table>
 							<tr class="ut_s3">
@@ -244,7 +253,7 @@
 								<th>차량번호</th>
 								<th>SMS발송</th>
 							</tr>
-						  
+
 							<tr>
 								<td>
 									<p class="t10" id="" alt="date">2020&#45;01&#45;15</p>
@@ -268,7 +277,7 @@
 								<td>12가3456</td>
 								<td><button class="ut_btn ut_s3">발송</button></td>
 							</tr>
-							
+
 							<tr>
 								<td>
 									<p class="t10" id="" alt="date">2020&#45;01&#45;15</p>
@@ -292,7 +301,7 @@
 								<td>12가3456</td>
 								<td><button class="ut_btn ut_s3">발송</button></td>
 							</tr>
-							
+
 							<tr>
 								<td>
 									<p class="t10" id="" alt="date">2020&#45;02&#45;16</p>
@@ -316,7 +325,7 @@
 								<td>12가3456</td>
 								<td><button class="ut_btn ut_s3">발송</button></td>
 							</tr>
-							
+
 							<tr>
 								<td>
 									<p class="t10" id="" alt="date">2020&#45;02&#45;17</p>
@@ -340,7 +349,7 @@
 								<td>12가3456</td>
 								<td><button class="ut_btn ut_s3">발송</button></td>
 							</tr>
-							
+
 							<tr>
 								<td>
 									<p class="t10" id="" alt="date">2020&#45;02&#45;19</p>
@@ -364,12 +373,12 @@
 								<td>12가3456</td>
 								<td><button class="ut_btn ut_s3">발송</button></td>
 							</tr>
-							  
+
 						</table>
 					</div>
 				</div>
 				<!--//unit3-->
-				
+
 				<!--unit0-->
 				<div class="unit" id="ut0">
 					<div class="unit_tit ut_s0">
@@ -503,27 +512,27 @@
 					<!--//테이블2개-->
 				</div>
 				<!--//unit0-->
-				
+
 				<!--unit4-->
 				<div class="unit" id="ut4">
 					<div class="unit_tit ut_s4">
 						<h3><p class="w12">input type group style</p></h3>
 					</div>
-					
+
 					<div class="unit_input_wrap">
 						<!--구분-->
 						<div class="ut_i_ct">
 							<p class="ut_ipt">
 								<label for="ut_ca">구분1</label>
 								<select name="ut_selectbox" id="ut_ca">
-								  <option value="all" selected="selected">전체</option>
-								  <option value="c1">카테고리1</option>
-								  <option value="c2">카테고리2</option>
+									<option value="all" selected="selected">전체</option>
+									<option value="c1">카테고리1</option>
+									<option value="c2">카테고리2</option>
 								</select>
 							</p>
 						</div>
 						<!--//구분-->
-						
+
 						<!--이름-->
 						<div class="ut_i_name">
 							<p class="ut_ipt">
@@ -532,7 +541,7 @@
 							</p>
 						</div>
 						<!--//이름-->
-						
+
 						<!--차량번호-->
 						<div class="ut_i_cn">
 							<p class="ut_ipt">
@@ -541,7 +550,7 @@
 							</p>
 						</div>
 						<!--//차량번호-->
-						
+
 						<!--조회버튼-->
 						<button class="btn_ut_search">
 							<i class="fa fa-search"></i>
@@ -549,38 +558,101 @@
 						</button>
 						<!--//조회버튼-->
 					</div>
-					
+
 					<div class="unit_table">
 						<table>
-						  <tr class="ut_s4">
-							<th>테이블 제목</th>
-							<th>테이블 제목</th>
-							<th>테이블 제목</th>
-						  </tr>
-						  <tr>
-							<td>테이블 리스트1</td>
-							<td>테이블 리스트2</td>
-							<td><button class="ut_btn ut_s4">발송</button></td>
-						  </tr>
-						  <tr>
-							<td>테이블 리스트1</td>
-							<td>테이블 리스트2</td>
-							<td><button class="ut_btn ut_s4">발송</button></td>
-						  </tr>
-						  <tr>
-							<td>테이블 리스트1</td>
-							<td>테이블 리스트2</td>
-							<td><button class="ut_btn ut_s4">발송</button></td>
-						  </tr>
+							<tr class="ut_s4">
+								<th>테이블 제목</th>
+								<th>테이블 제목</th>
+								<th>테이블 제목</th>
+							</tr>
+							<tr>
+								<td>테이블 리스트1</td>
+								<td>테이블 리스트2</td>
+								<td><button class="ut_btn ut_s4">발송</button></td>
+							</tr>
+							<tr>
+								<td>테이블 리스트1</td>
+								<td>테이블 리스트2</td>
+								<td><button class="ut_btn ut_s4">발송</button></td>
+							</tr>
+							<tr>
+								<td>테이블 리스트1</td>
+								<td>테이블 리스트2</td>
+								<td><button class="ut_btn ut_s4">발송</button></td>
+							</tr>
 						</table>
 					</div>
 				</div>
 				<!--//unit4-->
-				
+
+
+				<!--unit5 : 리스트에 조회 버튼 삽입-->
+				<div class="unit" id="ut5">
+					<div class="unit_tit2 ut_s5">
+						<h3><p class="w12">장비현황</p></h3>
+					</div>
+
+					<div class="unit_tit2_btn">
+						<button class="unit_btn">
+							<i class="fa fa-search"></i>
+							조회
+						</button>
+					</div>
+
+					<div class="unit_table">
+						<table>
+							<tr class="ut_s5">
+								<th>상태</th>
+								<th>주차장명</th>
+								<th>정산기명</th>
+							</tr>
+							<tr>
+								<td class="txt_l">매우좋음</td>
+								<td class="txt_l">A주차장</td>
+								<td class="txt_l">출구1</td>
+							</tr>
+							<tr>
+								<td class="txt_l">매우좋음</td>
+								<td class="txt_l">B주차장</td>
+								<td class="txt_l">출구2</td>
+							</tr>
+							<tr>
+								<td class="txt_l">매우좋음</td>
+								<td class="txt_l">C주차장</td>
+								<td class="txt_l">출구3</td>
+							</tr>
+							<tr>
+								<td class="txt_l">매우좋음</td>
+								<td class="txt_l">D주차장</td>
+								<td class="txt_l">출구4</td>
+							</tr>
+							<tr>
+								<td class="txt_l">매우좋음</td>
+								<td class="txt_l">E주차장</td>
+								<td class="txt_l">출구5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--//unit5-->
+
+
+				<!--삭제버튼1_유닛 가로길이 대비 테이블 간격이 넉넉할 때-->
+				<button class="ut_btn btn_del"><i class="fa fa-trash fa-fw"  alt="delete"></i>삭제</button>
+				<!--//삭제버튼_유닛 가로길이 대비 테이블 간격이 넉넉할 때-->
+
+
+				<!--삭제버튼2_유닛 가로길이 대비 테이블 간격이 좁을 때-->
+				<button class="ut_btn btn_del"><i class="fa fa-trash fa-fw" alt="delete,삭제"></i></button>
+				<!--//삭제버튼_유닛 가로길이 대비 테이블 간격이 좁을 때-->
+
+
+
 			</div>
 			<!--//dash board-->
-		<div>
-		<!--//content-->
+			<div>
+				<!--//content-->
 	</center>
 </div>
 
