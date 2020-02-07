@@ -181,7 +181,7 @@ a.btn_mypage:hover:after{color:#0091f7 !important;}
 .lnb_menu{position:relative; width:100%; height:688px; margin-top:60px; overflow-x:hidden; overflow-y:auto;}
 
 .lnb_list{position:relative; width:220px; text-align:left; overflow-x:hidden; border-bottom:1px solid #2e3049;}
-.lnb_site{position:relative;background: #292a3f;color: white;width:220px;height: 40px;line-height:40px;border-bottom:2px solid #797e99;text-align: center;font-size: 18px;font-family: "FontAwesome";} /* 주차장 name */
+.lnb_site{position:relative;background: #292a3f; color: white; width:220px;height: 40px; line-height:40px; border-bottom:1.5px solid #797e99; text-align: center;font-size: 18px;} /* 주차장 name */
 a.lnb_mn{display:inline-block; width:188px; height:40px; padding:0 16px; line-height:40px; text-align:left;
 	overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
 }
@@ -201,14 +201,26 @@ a.lnb_mn:hover p{color:#ffffff;}
 
 #lnb_sel .lnb_mn p{color:#ffffff !important;}
 
+.lnb_selc{ /* 클래스화 */
+	background: #0072dc;
+	background: -moz-linear-gradient(left, #0072dc 0%, #00d5e2 100%, #7db9e8 100%, #7db9e8 100%);
+	background: -webkit-linear-gradient(left, #0072dc 0%,#00d5e2 100%,#7db9e8 100%,#7db9e8 100%);
+	background: linear-gradient(to right, #0072dc 0%,#00d5e2 100%,#7db9e8 100%,#7db9e8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0072dc', endColorstr='#7db9e8',GradientType=1);
+}
+.lnb_selc_p{
+	color:#ffffff !important;
+	content: '\f106' !important;
+}
 
 .lnb_sub{display:none; width:100%; background:#232532; padding:8px 0; }
-#lnb_open{display:block !important;}
+#lnb_open{display:none; !important;}
 .lnb_sub_list{width:100%; height:40px; text-align:left; }
 .lnb_sub_list a{display:block; width:180px; height:40px; padding:0 20px; font-size:12px; font-weight:200; overflow:hidden; white-space: nowrap;
 	text-overflow: ellipsis; line-height: 40px; color:#96a3c4; }
 .lnb_sub_list a:hover{color:#ffffff;}
 .lnb_sub_list a:focus{color:#ffffff;}
+
 #lnb_sub_sel{color:#74e8ff !important;}
 
 
