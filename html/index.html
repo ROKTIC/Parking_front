@@ -15,6 +15,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 	<script src="../js/main.js"></script>
+	<script src="../js/clock.js"></script>
 
 	<!--icon-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -33,30 +34,46 @@
 		<!--gnb-->
 		<div class="gnb">
 			<header>
-				<div class="logo">
-					<a href=""><h1><img src="../images/logo.png" alt="go home"></h1></a>
+				<div class="clock">
+					<div class="time_box">
+						<span class="txt_lg" id="hours"></span>
+						<span class="mark">:</span>
+						<span class="txt_lg" id="min"></span>
+						<span class="mark02">.</span>
+						<span class="txt_sm" id="sec"></span>
+					</div>
+					<div class="date_box">
+						<span id="month"></span>
+						<span class="point">.</span>
+						<span id="date"></span>
+						<span class="point">.</span>
+						<span id="year"></span>
+						<span id="day"></span>
+					</div>
 				</div>
 
 				<div class="gnb_menu_wrap">
-					<div class="gnb_menu">
+					<ul class="gnb_menu">
 						<h2 class="txt_hide">web Menu, 웹 메뉴</h2>
 						<ul>
 							<li class="gnb_menu_sel"><a href="#">주차장관리</a></li>
-							<li><a href="#">정기회원등록</a>
-								<ul>
-									<li><a href="#">sub 1</a></li>
-									<li><a href="#">sub 2</a></li>
-									<li><a href="#">sub 3</a></li>
-								</ul>
+							<li class="dropdown-menu"><a href="#">정기회원 등록</a>
+									<ul class="dropdown-content">
+										<li><a href="#">sub 1</a></li>
+										<li><a href="#">sub 2</a></li>
+										<li><a href="#">sub 3</a></li>
+									</ul>
 							</li>
 							<li><a href="#">실적관리</a></li>
-							<li><a href="#">환경설정</a>
-								<ul>
+							<li class="dropdown-menu"><a href="#">환경설정</a>
+								<ul class="dropdown-content">
 									<li><a href="#">sub 4</a></li>
+									<li><a href="#">sub 5</a></li>
 								</ul>
 							</li>
 						</ul>
-					</div>
+					</ul>
+				</div>
 
 					<div class="gnb_login">
 						<button class="btn_login">
