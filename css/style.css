@@ -125,12 +125,12 @@ header{width:100%; height:60px; overflow-y:visible;}
 /*gnb*/
 .gnb{position:fixed; z-index:100; width:100%; height:60px; margin:0 auto; overflow:visible;}
 
-.clock{float:left; position:static; width:220px; height:40px; margin-top: 10px;margin-bottom: 10px;margin-left: 0px; line-height:20px; overflow:hidden;}
-.clock .time_box {float: left; width: 150px; height:20px;  text-align: right }
+.clock{float:left; position:static; width:220px; height:40px; margin-top: 0px;margin-bottom: 10px;margin-left: 0px; line-height:20px; overflow:hidden;}
+.clock .time_box {float: left; width: 150px; height:20px; text-align: right }
 .clock span { color: #95a3c7; }
 .txt_lg { font-size: 20px; }
 .txt_sm { font-size: 10px; }
-.date_box {float: left; width: 150px; font-size: 10pt; text-align: right}
+.date_box {float: left; width: 150px; font-size: 10pt;text-align: right}
 #day { display: inline; margin-left: 7px; }
 .mark { display: inline-block; vertical-align: top; height: 20px; margin-left: 1px; font-size: 20px; }
 .mark02 { display: inline-block; margin-left: -3px; }
@@ -200,17 +200,20 @@ header{width:100%; height:60px; overflow-y:visible;}
 .btn_login:hover{border-bottom:1px solid #ffffff;}
 .btn_login:active{border-bottom:1px solid #0091f7;}
 
+
 .icon_login{float:left; display:block; width:22px; height:22px; margin-right:8px; text-align:center; background:url(../images/icon_login.png) center center no-repeat; background-size:24px 24px;}
 .id_login{float:left; color:#96a3c4; margin-right:8px; line-height:24px; font-weight:200;}
 .btn_login i{color:#96a3c4 !important; line-height:24px;}
 .btn_login:hover .id_login{color:#ffffff;}
 .btn_login:hover.btn_login i{color:#ffffff !important;}
 
+.btn_login:hover .login_popup_wrap{display: block;}
+
 .btn_login:active .id_login{color:#74e8ff;}
 .btn_login:active.btn_login i{color:#74e8ff !important;}
 
 /*login popup_script필요*/
-.login_popup_wrap{display:none; position:fixed; z-index:100; top:52px; right:16px; width:240px; height:134px;
+.login_popup_wrap{display:none; position:fixed; z-index:100; top:52px; right:16px; width:240px; height:109px;
 	background:#ffffff; border-radius:10px; box-shadow:0px 0px 10px rgba(0,0,0,0.7); text-align:center; overflow:hidden;}
 .login_popup_wrap p{text-align:center; font-size:12px; color:#303248;  text-overflow:ellipsis;}
 .login_popup_wrap p.t20{width:220px; height:29px; padding:20px 10px 0 10px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
