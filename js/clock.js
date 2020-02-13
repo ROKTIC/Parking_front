@@ -1,6 +1,6 @@
 var clockStart = setInterval(function() {
     var today = new Date();
-    var dayList = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    var dayList = ['일', '월', '화', '수', '목', '금', '토']
     var hh = addZero(today.getHours());
     var mm = addZero(today.getMinutes());
     var ss = addZero(today.getSeconds());
