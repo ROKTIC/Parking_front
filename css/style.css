@@ -160,6 +160,7 @@ header{width:100%; height:60px; overflow-y:visible;}
 	padding-bottom: 1px;
 	position: relative;
 	z-index: 103;
+	margin-top: 5px;
 	min-width: 40px;
 	alignment: center;
 	font-size: 14px;
